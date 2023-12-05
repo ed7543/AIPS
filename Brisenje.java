@@ -16,11 +16,15 @@ public class Main {
             newarr[i] = arr[i];
         }
 
-        for(i = 1; i < n; i++) {
-            System.out.print(newarr[i] + " ");
+        
+        for(i = 0; i < newarr.length - 1; i++) {
+            newarr[i] = newarr[i + 1];
         }
+        
+        newarr = Arrays.copyOf(newarr, newarr.length - 1);
+        
 
-        //System.out.println(Arrays.toString(newarr));
+        System.out.println(Arrays.toString(newarr));
     }
 
     public static void main(String[] args) {
