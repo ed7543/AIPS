@@ -164,10 +164,6 @@ class SLL<E> {
         }
     }
 
-}
-
-public class Reverse {
-    
     public static void revList(SLL<Integer> list) {
         SLLNode<Integer> current = list.getFirst();
         SLLNode<Integer> prev = null;
@@ -183,9 +179,12 @@ public class Reverse {
             current = next;
         }
 
-        // Set the new first node of the list
-        list.first = prev;
-    }
+}
+
+
+
+public class Reverse {
+    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
